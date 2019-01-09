@@ -25,36 +25,36 @@
 }
 
 
-.headerContainer {
+.header-container {
   border: 1px solid red;
   display: grid;
   grid-template: 1fr / 1fr 4fr 1fr .5fr .3fr;
   box-shadow: bottom;
 
 }
-.item-1{
+.item-1 {
   border: 1px solid black;
 
 }
-.item-2{
+.item-2 {
   border: 1px solid black;
   display: flex;
   justify-content: flex-end;
   padding-right: 10%;
 }
-.item-3{
+.item-3 {
   border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.item-4{
+.item-4 {
   border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.item-5{
+.item-5 {
   border: 1px solid black;
   display: flex;
   align-items: center;
