@@ -1,35 +1,35 @@
 @font-face {
   font-family: 'icomoon';
+  font-style: normal;
+  font-weight: normal;
   src:  url('../fonts/icomoon.eot?5w948n');
   src:  url('../fonts/icomoon.eot?5w948n#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?5w948n') format('truetype'),
     url('../fonts/icomoon.woff?5w948n') format('woff'),
     url('../fonts/icomoon.svg?5w948n#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+  -moz-osx-font-smoothing: grayscale;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
 }
 
 
 .header-container {
   border: 1px solid red;
+  box-shadow: bottom;
   display: grid;
   grid-template: 1fr / 1fr 4fr 1fr .5fr .3fr;
-  box-shadow: bottom;
 
 }
 .item-1 {
@@ -43,21 +43,21 @@
   padding-right: 10%;
 }
 .item-3 {
+  align-items: center;
   border: 1px solid black;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .item-4 {
+  align-items: center;
   border: 1px solid black;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 .item-5 {
+  align-items: center;
   border: 1px solid black;
   display: flex;
-  align-items: center;
   padding-bottom: 15%;
 }
 
@@ -74,10 +74,10 @@ header {
   /* flex-shrink: 1; */
 }
 .searcher {
-  width: 70%;
-  height: 40%;
   align-self: center;
   border-radius: 7px;
+  height: 40%;
+  width: 70%;
 
 }
 .p-nombre{
@@ -100,4 +100,108 @@ header {
   content: "\e901";
   margin: 0;
   padding: 0;
+}
+
+/* AQUI COMIENZA LA SECCIÓN DEL MENU LATERAL */
+
+.menu {
+  background: rgba(74,146,199,1);
+  border: 1px solid black;
+  width: 10%;
+}
+.menu-container {
+  border: 1px solid green;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 1fr;
+
+}
+.home {
+  align-items: center;
+  border: 1px solid blue;
+  display: flex;
+  font-size: 30px;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.trending {
+  align-items: center;
+  border: 1px solid blue;
+  display: flex;
+  font-size: 30px;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.mas-likes {
+  align-items: center;
+  border: 1px solid blue;
+  display: flex;
+  font-size: 30px;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+.ajustes {
+  align-items: center;
+  border: 1px solid blue;
+  display: flex;
+  font-size: 30px;
+  height: 80px;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+p {
+  font-family: 'Open Sans';
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+.icon-home3:before {
+  content: "\e902";
+  color: white;
+  margin: 0;
+  padding: 0;
+
+}
+
+.icon-whatshot:before {
+  content: "\e80e";
+  color: white;
+}
+.icon-chevron:before {
+  content: "\e901";
+}
+.icon-cog:before {
+  content: "\e994";
+  color: white;
+}
+.icon-heart:before {
+  content: "\e9da";
+  color: white;
+}
+.icon-google-plus3:before {
+  content: "\ea8d";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin:before {
+  content: "\eac9";
 }
