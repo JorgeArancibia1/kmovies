@@ -108,33 +108,42 @@ header {
   background: rgba(74,146,199,1);
   border: 1px solid black;
   width: 10%;
+  height: 600px;
 }
 .menu-container {
-  border: 1px solid green;
+  border: 1px solid red;
   display: grid;
   grid-template: repeat(4, 1fr) / 1fr;
+  height: inherit;
+  width: 100%;
+  position: relative;
+
+
 
 }
 .home {
-  align-items: center;
   border: 1px solid blue;
   display: flex;
   font-size: 30px;
   height: 80px;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 99%;
   flex-direction: column;
 }
 
 .trending {
-  align-items: center;
+
   border: 1px solid blue;
   display: flex;
   font-size: 30px;
   height: 80px;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 99%;
   flex-direction: column;
+  position: absolute;
+  top: 81px;
 }
 .mas-likes {
   align-items: center;
@@ -143,8 +152,11 @@ header {
   font-size: 30px;
   height: 80px;
   justify-content: center;
-  width: 100%;
+  width: 99%;
   flex-direction: column;
+  position: absolute;
+  top: 162px;
+
 }
 .ajustes {
   align-items: center;
@@ -153,8 +165,10 @@ header {
   font-size: 30px;
   height: 80px;
   justify-content: center;
-  width: 100%;
+  width: 99%;
   flex-direction: column;
+  position: absolute;
+  bottom: 5%;
 }
 p {
   font-family: 'Open Sans';
@@ -178,6 +192,8 @@ p {
 .icon-whatshot:before {
   content: "\e80e";
   color: white;
+  margin: 0;
+  padding: 0;
 }
 .icon-chevron:before {
   content: "\e901";
@@ -185,10 +201,14 @@ p {
 .icon-cog:before {
   content: "\e994";
   color: white;
+  margin: 0;
+  padding: 0;
 }
 .icon-heart:before {
   content: "\e9da";
   color: white;
+  margin: 0;
+  padding: 0;
 }
 .icon-google-plus3:before {
   content: "\ea8d";
