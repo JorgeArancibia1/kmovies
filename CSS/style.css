@@ -235,12 +235,12 @@ p {
   font-weight: bold;
 }
 .video-1 {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   grid-area: video-1;
   height: 160px;
   margin-left: 25px;
   /* margin-bottom: 5px; */
-  background-color: pink;
+  /* background-color: pink; */
   position: relative;
   z-index: 1;
 }
@@ -267,7 +267,7 @@ img {
   /* background-color: blue; */
   position: relative;
   right: 40px;
-  bottom: 18px;
+  bottom: 16px;
   z-index: 3;
 }
 .hero-c2 {
